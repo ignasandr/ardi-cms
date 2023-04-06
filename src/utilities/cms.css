@@ -1,0 +1,9 @@
+:root {
+    /* --font-serif: "Suisse Intl", sans-serif; */
+    --font-serif: sans-serif;
+
+}
+
+.account__header h1 {
+  overflow: visible;
+}
