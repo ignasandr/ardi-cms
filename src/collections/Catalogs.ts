@@ -12,10 +12,17 @@ const Catalogs: CollectionConfig = {
     {
       name: "title",
       type: "text",
+      required: true,
+    },
+    {
+      name: "slug",
+      type: "text",
+      required: true,
     },
     {
       name: "items",
       type: "array",
+      minRows: 4,
       fields: [
         {
           name: "image",

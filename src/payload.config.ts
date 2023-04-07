@@ -2,6 +2,7 @@ import { buildConfig } from "payload/config";
 import path from "path";
 import News from "./collections/News";
 import Contacts from "./globals/Contacts";
+import Menu from "./globals/Menu";
 import Catalogs from "./collections/Catalogs";
 import Images from "./collections/Images";
 import Users from "./collections/Users";
@@ -20,7 +21,7 @@ export default buildConfig({
     // Add Collections here
     // Examples,
   ],
-  globals: [Contacts],
+  globals: [Menu, Contacts],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
