@@ -12,6 +12,7 @@ const News: CollectionConfig = {
     {
       name: "heading",
       type: "text",
+      required: true,
     },
     {
       name: "body",
@@ -20,11 +21,13 @@ const News: CollectionConfig = {
         elements: ["link"],
         leaves: ["bold", "italic", "underline"],
       },
+      required: true,
     },
     {
       name: "image",
       type: "upload",
       relationTo: "images",
+      required: true,
     },
   ],
 };

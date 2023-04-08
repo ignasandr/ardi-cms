@@ -28,6 +28,7 @@ const Catalogs: CollectionConfig = {
           name: "image",
           type: "upload",
           relationTo: "images",
+          required: true,
         },
       ],
     },
